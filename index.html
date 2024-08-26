@@ -45,12 +45,29 @@
       .font-manrope {
         font-family: "Manrope", system-ui;
       }
+
+      /* Remove default margin and padding */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Add top padding to header */
+      header {
+        padding-top: 0;
+      }
+
+      /* Set body background color */
+      body {
+        background-color: #f4f4f4;
+      }
     </style>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope bg-[#F4F4F4]">
     <header class="container mx-auto">
       <!-- navigation -->
-      <nav class="flex items-center justify-between p-4 bg-gray-30 mt-5">
+      <nav class="flex items-center justify-between p-4 bg-gray-30">
         <!-- Logo and Title -->
         <div class="flex items-center gap-2">
           <i
@@ -80,7 +97,7 @@
             ></i>
           </div>
           <button
-            class="bg-green-400 text-black font-bold p-2 rounded-xl flex items-center gap-2"
+            class="bg-[#ABEF5F] text-black font-bold p-2 rounded-full flex items-center gap-2"
           >
             Book Consult
             <i
@@ -96,7 +113,7 @@
       </nav>
 
       <!-- hero section -->
-      <section class="container mx-auto">
+      <section class="container mx-auto mb-14">
         <div class="flex items-center justify-center">
           <img src="./assets/banner.png" alt="" />
         </div>
@@ -114,18 +131,65 @@
             >
           </p>
           <button
-            class="bg-green-300 p-3 rounded-full text-black font-bold w-5/6 lg:w-1/6"
+            class="bg-[#ABEF5F80] p-3 rounded-full text-black font-bold w-5/6 lg:w-1/6"
           >
             View Details
             <i
-              class="fa-solid fa-arrow-right ml-1 bg-green-400 rounded-xl p-1 -rotate-45"
+              class="fa-solid fa-arrow-right ml-1 bg-[#ABEF5F] rounded-xl p-1 -rotate-45"
             ></i>
           </button>
         </div>
       </section>
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+        <div class="w-full md:w-1/2 p-4 space-y-8 md:pt-16">
+          <button
+            class="text-xl font-bold mb-2 border w-1/2 rounded-xl bg-[#FFFFFF]"
+          >
+            <i class="fa-solid fa-arrow-right"></i> About Us
+          </button>
+          <h3 class="font-extrabold text-4xl">
+            We design thoughtful, liveable spaces
+          </h3>
+          <p class="text-gray-500 font-semibold">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- commercial -->
+          <div class="flex gap-4 bg-[#FFFFFF] rounded-xl p-3">
+            <img class="h-1/2" src="./assets/commercial.png" alt="" />
+            <div>
+              <h4 class="font-semibold text-gray-800">Commercial</h4>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- residential -->
+
+          <div class="flex gap-4 bg-[#FFFFFF] rounded-xl p-3">
+            <img class="h-1/2" src="./assets/residential.png" alt="" />
+            <div>
+              <h4 class="font-semibold text-gray-800">Residential</h4>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+          <img
+            src="./assets/Rectangle.png"
+            alt="Rectangle Image"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
   </body>
