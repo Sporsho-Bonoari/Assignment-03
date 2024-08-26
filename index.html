@@ -118,7 +118,7 @@
           <img src="./assets/banner.png" alt="" />
         </div>
         <div class="flex flex-col items-center space-y-6 p-4 md:p-12">
-          <h2 class="text-5xl font-bold mx-auto p-1">
+          <h2 class="lg:text-5xl text-3xl text-center font-bold mx-auto p-1">
             A barn house of this design has a
             <span class="md:flex md:justify-center">striking appearance</span>
           </h2>
@@ -142,15 +142,22 @@
       </section>
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto relative">
       <div class="flex flex-col md:flex-row items-center justify-between mb-8">
         <div class="w-full md:w-1/2 p-4 space-y-8 md:pt-16">
+          <div
+            class="absolute border-2 border-dashed border-gray-500 lg:-top-[-55px] hidden lg:block"
+          >
+            <img src="./assets/Vector.png" alt="" />
+          </div>
           <button
-            class="text-xl font-bold mb-2 border w-1/2 rounded-xl bg-[#FFFFFF]"
+            class="text-xl ml-16 lg:ml-0 font-bold mb-2 border w-1/2 rounded-xl bg-[#FFFFFF]"
           >
             <i class="fa-solid fa-arrow-right"></i> About Us
           </button>
-          <h3 class="font-extrabold text-4xl">
+          <h3
+            class="font-extrabold text-2xl lg:text-4xl text-center lg:text-start"
+          >
             We design thoughtful, liveable spaces
           </h3>
           <p class="text-gray-500 font-semibold">
@@ -255,6 +262,126 @@
       </div>
     </main>
 
+    <!-- portfolio section -->
+
+    <div class="" style="bg-[FFFFFF]">
+      <div class="container mx-auto mt-9 text-center">
+        <button
+          class="text-sm font-bold mb-4 border w-4/6 p-1 lg:w-1/5 rounded-xl bg-[#ABEF5F33] mt-4 lg:p-1"
+        >
+          <i class="fa-solid fa-arrow-right"></i> Explore Our Latest Works
+        </button>
+        <h3 class="font-extrabold text-3xl">Our Latest Portfolio</h3>
+        <p class="font-semibold text-gray-500 p-4 mb-4">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <!-- for laptop and mobile -->
+        <div class="flex gap-4 flex-col lg:flex-row">
+          <!-- card-1 -->
+
+          <div class="lg:flex gap-3 border">
+            <img
+              class="mx-auto lg:border lg:border-dashed lg: border-gray-500 rounded-xl"
+              src="./assets/img1.png"
+              alt=""
+            />
+            <!-- card-1-contents -->
+            <div class="flex flex-col space-y-2">
+              <h4
+                class="text-start lg:pl-0 pl-7 lg:mt-0 mt-2 font-bold text-black"
+              >
+                Commercial
+              </h4>
+              <p class="text-start ml-7 lg:ml-0">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <p class="font-bold text-black text-start ml-7 lg:ml-0">
+                View Details
+                <i
+                  class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-xl p-1 -rotate-45"
+                ></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl">
+            <img
+              class="mx-auto lg:h-full lg:w-full w-5/6"
+              src="./assets/img2.png"
+              alt=""
+            />
+          </div>
+          <div class="rounded-xl lg:hidden">
+            <img
+              class="mx-auto lg:h-full lg:w-full w-5/6"
+              src="./assets/img5.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- second row -->
+        <div class="container mx-auto mt-9">
+          <div class="lg:grid lg:grid-cols-3 gap-4">
+            <!-- First Column -->
+            <div class="lg:flex gap-3 border lg:w-4/5 lg:h-5/6 lg:pt-7 hidden">
+              <img
+                class="mx-auto w-full rounded-xl lg:w-4/5 lg:h-5/6"
+                src="./assets/img3.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Second Column with Image and Text -->
+            <div class="p-3 lg:p-0 w-full border lg:-ml-12 lg:w-[450px]">
+              <div
+                class="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-0"
+              >
+                <div class="flex-none w-full lg:w-4/5 lg:h-4/5">
+                  <img
+                    class="w-full lg:w-4/5 h-auto lg:h-4/5 lg:pt-7 lg:p-8"
+                    src="./assets/img4.png"
+                    alt="Commercial"
+                  />
+                </div>
+                <div class="lg:-ml-10 lg:pt-6 border space-y-2">
+                  <h4 class="text-start font-bold text-black">Commercial</h4>
+                  <p class="text-start">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                  <p class="text-start font-bold text-black">
+                    View Details
+                    <i
+                      class="fa-solid fa-arrow-right ml-1 bg-[#ABEF5F] rounded-xl p-1 -rotate-45"
+                    ></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:hidden p-4">
+              <img
+                class="mx-auto w-full rounded-xl lg:w-4/5 lg:h-5/6"
+                src="./assets/img3.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Third Column -->
+            <div class="rounded-xl p-4 w-full border">
+              <img
+                class="mx-auto w-full lg:w-4/5 lg:h-4/5 border lg:ml-20 lg:mt-3"
+                src="./assets/img5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Discuss section -->
     <div class="mt-10" style="background-image: url(./assets/bg.jpg)">
       <div class="container mx-auto text-center space-y-3 pt-16">
@@ -327,6 +454,47 @@
       </div>
     </div>
 
-    <footer></footer>
+    <footer class="bg-black text-white lg:h-[430px] h-[660px]">
+      <!-- text-contents -->
+      <div class="pt-20 max-w-screen-xl mx-auto">
+        <div class="flex items-center gap-2 justify-center">
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-xl text-white p-1"
+          ></i>
+          <h3 class="text-2xl font-bold text-white">Rinterio</h3>
+        </div>
+
+        <p class="font-semibold text-gray-500 p-4 mb-9 text-center">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+
+      <!-- links -->
+      <div
+        class="mb-12 flex justify-center items-center max-w-screen-xl mx-auto"
+      >
+        <ul
+          class="flex flex-col lg:flex-row gap-4 lg:gap-28 justify-center items-center"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex justify-center">
+        <button
+          class="bg-[#ABEF5F] p-3 rounded-full text-black font-bold w-4/6 lg:w-1/6 mx-auto"
+        >
+          View Details
+          <i
+            class="fa-solid fa-arrow-right ml-1 bg-black text-white rounded-xl p-1 -rotate-45"
+          ></i>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
